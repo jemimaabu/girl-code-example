@@ -20,6 +20,7 @@ nav {
 }
 
 .nav-links {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     width: 65%;
     list-style: none;
@@ -39,6 +40,7 @@ nav {
 }
 
 .nav-search {
+    font-family: 'Raleway', sans-serif;
     width: 15%;
 }
 
@@ -93,6 +95,27 @@ header {
     width: 100%;
 }
 
+footer {
+    font-family: 'Raleway', sans-serif;
+    background-color: #222;
+    color: #eee;
+    padding: 2em 4em;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #eee;
+    width: 25%;
+    text-align: center;
+    padding: 0.5em 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
 /*For tablet view*/
 @media screen and (max-width: 920px) {
     .nav-links {
@@ -106,6 +129,9 @@ header {
     }
     .header-image {
         background-position-y: -3em;
+    }
+    footer a {
+        width: 50%;
     }
 }
 
@@ -127,5 +153,8 @@ header {
     }
     .header-text h1 {
         font-size: 3.5em;
+    }
+    footer a {
+        width: 100%;
     }
 }
