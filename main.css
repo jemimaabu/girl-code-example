@@ -1,0 +1,131 @@
+:root {
+    --accent-color: #E94312
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 75px;
+    align-items: flex-end;
+}
+
+.nav-logo {
+    width: 15%;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 2em;
+}
+
+.nav-links {
+    display: flex;
+    width: 65%;
+    list-style: none;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.nav-links li + li {
+    margin-left: 2em;
+}
+
+.nav-search {
+    width: 15%;
+}
+
+.nav-search span + span {
+    margin-left: 1em;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+}
+
+.header-text {
+    width: 50%;
+    padding: 4.5em;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+}
+
+.header-text h1 {
+    font-size: 6.5rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.header-text h2 {
+    font-size: 4em;
+    margin: 0.25rem 0;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: 100;
+}
+
+.header-text p {
+    font-size: 1.3em;
+    margin: 2em 0;
+    width: 75%;
+}
+
+.header-image {
+    position: absolute;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-image: url("skate.jpg");
+    background-size: cover;
+    background-position-y: -6em;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+/*For tablet view*/
+@media screen and (max-width: 920px) {
+    .nav-links {
+        width: 35%;
+    }
+    .nav-search {
+        width: 20%;
+    }
+    .header-text h1 {
+        font-size: 4.5em;
+    }
+    .header-image {
+        background-position-y: -3em;
+    }
+}
+
+/*For mobile view*/
+@media screen and (max-width: 650px) {
+    nav {
+        padding: 1em;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-search {
+        display: none;
+    }
+    
+    .header-text {
+        width: 100%;
+        padding: 1em;
+    }
+    .header-text h1 {
+        font-size: 3.5em;
+    }
+}
